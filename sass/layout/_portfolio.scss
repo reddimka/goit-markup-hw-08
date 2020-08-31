@@ -1,0 +1,111 @@
+/*portfolio*/
+.filter-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.filter-list-item:not(:last-child) {
+  margin-right: 9px;
+}
+.button-filter {
+  padding: 6px 22px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-taitle-dark;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &foces {
+    background-color: $hover-color;
+    color: $tex-taitle-light;
+  }
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.element-portfolio {
+  position: relative;
+  width: 370px;
+  height: 404px;
+  display: block;
+  margin-right: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+
+  &:hover {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+.portfolio-img {
+  margin-bottom: 20px;
+}
+.title-portfolio {
+  margin-left: 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $text-taitle-dark;
+  margin-bottom: 4px;
+}
+.subtatle-portfolio {
+  margin-left: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: $accent-color-text;
+}
+.element-portfolio {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.element-portfolio:hover .portfolio-overlay {
+  transform: translateY(0%);
+}
+.portfolio-overlay {
+  position: absolute;
+  display: flex;
+  width: 370px;
+  height: 404px;
+  top: 0px;
+  left: 0px;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+  transform: translateY(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 294px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: $tex-taitle-light;
+  background: $hover-color;
+}

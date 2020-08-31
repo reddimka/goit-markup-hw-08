@@ -1,0 +1,41 @@
+/* what we do*/
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-taitle-dark;
+  margin-bottom: 50px;
+}
+
+.box-list {
+  display: flex;
+}
+
+.box-list-item {
+  width: 370px;
+  height: 294px;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.description-made {
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $tex-taitle-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(47, 48, 58, 0.8);
+}

@@ -1,0 +1,123 @@
+/*footer*/
+.footer {
+  display: flex;
+  background-color: #2f303a;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+.footer-address {
+  display: flex;
+  flex-basis: 25%;
+  flex-direction: column;
+  margin-right: 30px;
+}
+.logo-footer {
+  margin-bottom: 20px;
+}
+.contacts:not(:last-child) {
+  margin-bottom: 9px;
+}
+.logo-footer {
+  font-family: $secondary-font;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $tex-taitle-light;
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+.footer-social-link-list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.social-link-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link-list-item {
+  display: flex;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 44px;
+  height: 44px;
+}
+.address,
+.footer-mail,
+.footer-tel {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.72;
+  letter-spacing: 0.03em;
+  color: $tex-taitle-light;
+}
+.footer-mail,
+.footer-tel {
+  font-style: normal;
+  color: $accent-color-text;
+}
+.footer-social .social-link-list-item .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: $tex-taitle-light;
+}
+.footer-social .social-link-list-item .social-link:hover {
+  background-color: $hover-color;
+}
+.footer-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $tex-taitle-light;
+  margin-bottom: 20px;
+}
+
+.footer-buttom {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $tex-taitle-light;
+  background-color: $hover-color;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: 0px;
+}
+.footer-icon-button {
+  padding-top: 6px;
+  width: 24px;
+  height: 24px;
+  fill: $tex-taitle-light;
+}
+.form-input {
+  width: 358px;
+  height: 50px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+  padding: 15px 16px;
+}
+.form-email {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
